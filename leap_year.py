@@ -1,7 +1,7 @@
-while True:
-    is_leap_year = None
+year = int(input())
 
-    year = int(input())
+while year.isdigit():
+    is_leap_year = None
 
     if year % 4 == 0:
         if year % 100 == 0:
@@ -18,3 +18,5 @@ while True:
         print(f'{year} is a leap year')
     else:
         print(f'{year} is not a leap year')
+
+print('This is not a number')
